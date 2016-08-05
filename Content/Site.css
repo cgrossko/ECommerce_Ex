@@ -1,0 +1,202 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input*/,
+select,
+textarea {
+    max-width: 280px;
+}
+
+nav {
+    box-shadow: 0 8px 2px -6px #e6e6e6;
+    z-index: 2;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Palaquin', sans-serif;
+    color: #a6a6a6;
+}
+
+.pull-right {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+
+.pull-right li a {
+    font-family: 'Palaquin', sans-serif;
+    color: #a6a6a6;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+.product-sidebar {
+    position: fixed;
+    height: 100%;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    justify-content: center;
+    margin-top: 2rem;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    width: 330px;
+}
+
+#product-row {
+    display: flex;
+    justify-content: center;
+}
+
+.products li i {
+    text-align: center;
+    color: #a6a6a6;
+}
+
+.products li p {
+    font-family: 'Palaquin', sans-serif;
+    font-size: 13px;
+    color: #a6a6a6;
+}
+
+.products li {
+    margin: 15px;
+}
+
+.w3-row h1, .w3-row p {
+    color: #a6a6a6;
+}
+
+.w3-row h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.w3-row p {
+    font-family: 'Palaquin', sans-serif;
+}
+
+#cart {
+    display: flex;
+    position: relative;
+}
+
+#cart a {
+    border: solid black;
+    border-radius: 0;
+}
+
+#cart p {
+    position: relative;
+    top: 7px;
+    color: #a6a6a6;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.large {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #a6a6a6;
+    border-bottom: 1px solid #a6a6a6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.large a {
+    background-color: white;
+    border: none;
+}
+
+.large a:hover {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 0;
+}
+
+.large a:focus, .large a:selected, .large a:active {
+    background-color: white;
+}
+
+#detail-btn {
+    flex-grow: 1;
+    color: #a6a6a6;
+}
+
+.fa-chevron-up {
+    padding-right: 80px;
+    color: #a6a6a6;
+}
+
+.display {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    height: 92%;
+    width: 65%;
+}
+
+.carousel-inner {
+    width: 92%;
+    height: 65%;
+}
+
+.carousel-inner>.carousel-item>a>img, .carousel-inner>.carousel-item>img, .img-fluid {
+    height: 620px;
+}
+
+@media (max-width: 790px) {
+   .display {
+        left: 0;
+        padding: 5px;
+        width: 100%;
+    }
+    .product-sidebar {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+    }
+    .pull-right {
+        display: none;
+    }
+    .nav {
+        float: right;
+    }
+}
+
+
+
+
+
+
+
+
+
